@@ -1,0 +1,36 @@
+                        <div class="page-heading">
+                            <h1>Robot érettségi 2022</h1>
+                            <span class="subheading">Add meg a parancsot!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="my-5">
+                            <form id="contactForm" action="index.php?oldal=rovid_ment"
+							method="POST"> <!--data-sb-form-api-token="API_TOKEN"-->
+							
+                                <div class="form-floating">
+                                    <input class="form-control" id="parancs" 
+									name="parancs"
+									type="text" placeholder="Enter your name..." 
+									data-sb-validations="required" />
+                                    <label for="name">Parancs: </label>
+                                    <div class="invalid-feedback" 
+									data-sb-feedback="name:required">
+									A name is required.</div>
+                                </div><br>
+								<input class="btn btn-primary text-uppercase" 
+								type="submit" name="gomb" value="Rövidít">
+                              
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
