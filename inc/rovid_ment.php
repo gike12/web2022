@@ -57,11 +57,3 @@
 	
 	print "Jelenleg ".$sorok_szama." darab parancs 
 	van az adatbázisban.";
-	
-	
-	
-	
-	
-	
-		
-?>

@@ -1,4 +1,4 @@
 <?php
-    session_destroy();
-    ugras("index.php",1);
+session_destroy();
+ugras("index.php", 1);
 ?>

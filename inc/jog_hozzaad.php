@@ -23,9 +23,9 @@
 
 ?>
 <form id="contactForm" action="index.php?oldal=jog_hozzaad" method="POST">
-            <div class="form-floating">
-                <select class="form-control" name="jog_id" data-sb-validations="required" >
-                    <?php
+    <div class="form-floating">
+        <select class="form-control" name="jog_id" data-sb-validations="required">
+            <?php
                          $maxjog=20;
                          $result1 = mysqli_query($con, "SELECT id FROM jogosultsagok");
                          $unused_ids_a= array();
@@ -35,16 +35,17 @@
                          for ($i=0; $i < $maxjog ; $i++) array_push($unused_ids_a, $i);
                          $unused_ids=array_values(array_diff($unused_ids_a,$ids));
                          for ($i=1; $i < count($unused_ids) ; $i++) { 
-                            ?><option value=<?php print $unused_ids[$i]; ?> ><?php print $unused_ids[$i];?></option><?php
+                            ?><option value=<?php print $unused_ids[$i]; ?>><?php print $unused_ids[$i];?></option><?php
                          }
                          
                     ?>
-                </select>
-                    <label for="name">Id neve</label>
-            </div>
-            <div class="form-floating">
-                <input class="form-control" id="jog_nev" name="jog_nev" type="text" placeholder="Jogosultság neve" data-sb-validations="required" />
-                    <label for="name">Jogosultság neve</label><br>
+        </select>
+        <label for="name">Id neve</label>
+    </div>
+    <div class="form-floating">
+        <input class="form-control" id="jog_nev" name="jog_nev" type="text" placeholder="Jogosultság neve"
+            data-sb-validations="required" />
+        <label for="name">Jogosultság neve</label><br>
 
         <input class="btn btn-primary text-uppercase" type="submit" name="ment" value="Hozzáad">
 </form>

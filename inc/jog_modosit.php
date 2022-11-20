@@ -27,16 +27,13 @@ if(isset($_POST['modosit'])){
 ?>
 <h1>Jogosultságnév módosítás</h1><br>
 <form id="contactForm" action="index.php?oldal=jog_modosit" method="POST">
-                            <input hidden name="id" value="<?php print $_GET['id']; ?>">
-                            <div class="form-floating">
-                                <input class="form-control" id="jognev" 
-                                name="jognev" value=<?php print $row['megnevezes']; ?>
-                                type="text" placeholder="Név" 
-                                data-sb-validations="required" />
-                                <label for="name">Jogosultság neve</label>
-                            </div>
-                            <br> <input class="btn btn-primary text-uppercase" 
-                            type="submit" name="modosit" value="Mentés">
+    <input hidden name="id" value="<?php print $_GET['id']; ?>">
+    <div class="form-floating">
+        <input class="form-control" id="jognev" name="jognev" value=<?php print $row['megnevezes']; ?> type="text"
+            placeholder="Név" data-sb-validations="required" />
+        <label for="name">Jogosultság neve</label>
+    </div>
+    <br> <input class="btn btn-primary text-uppercase" type="submit" name="modosit" value="Mentés">
 </form>
 <?php
     }

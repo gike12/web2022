@@ -6,4 +6,3 @@
         <a href=index.php?oldal=user_torol&id=$row[id]> Töröl </a>
         <a href=index.php?oldal=user_modosit&id=$row[id]>Módosít</a><br>";
     }
-?>
